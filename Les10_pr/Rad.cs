@@ -20,6 +20,7 @@ namespace Les10_pr
 
             set
             {
+                //углы могут быть отрицательными и большими
                gradG = value;
                 
             }
@@ -54,6 +55,7 @@ namespace Les10_pr
             }
 
         }
+        
 
         public Rad(int gradG, int gradM, int gradS)
         {
@@ -63,7 +65,7 @@ namespace Les10_pr
         }
         public double ToRad()
         {
-            return (gradS/3600+gradM/60+gradG)*Math.PI/180;
+            return (gradS/3600+gradM/60+gradG);
         }
 
     }
