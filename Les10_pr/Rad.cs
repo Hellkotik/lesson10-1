@@ -65,7 +65,7 @@ namespace Les10_pr
         }
         public double ToRad()
         {
-            return (gradS/3600+gradM/60+gradG);
+            return (gradS/3600+gradM/60+gradG) * Math.PI / 180;
         }
 
     }
